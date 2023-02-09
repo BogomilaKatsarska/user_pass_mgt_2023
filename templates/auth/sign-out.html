@@ -1,0 +1,6 @@
+<h1>Logout!</h1>
+<form method="post" action="{% url 'sign out' %}">
+    {{ form.as_p }}
+    <button>Logout!</button>
+    {% csrf_token %}
+</form>
